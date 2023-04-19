@@ -3,18 +3,67 @@ body {
 }
 
 h1 {
-    font-size: 6em;
+    font-size: 2.8em;
     text-align: center;
 }
+
 nav {
     font-size: 1.5em;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: column;
+    align-items: center;
+}
+nav ul {
+    flex-flow: column;
+    align-items: center;
 }
 
-ul,li {
+ul,
+li {
     display: inline;
     margin: 0;
     padding: 0;
 }
 
+ul {
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly;
+}
 
-
+@media (min-width: 576px) {
+    h1{
+        font-size: 4.2em;
+    }
+    nav {
+        flex-flow: row;
+        margin: 0 auto;
+    }
+    nav ul {
+        flex-flow: row;
+        max-width: 60%;
+    }
+}
+@media (min-width: 768px) {
+    h1{
+        font-size: 5.1em;
+    }
+    nav ul {
+        max-width: 50%;
+    }
+}
+@media (min-width: 992px) {
+    h1{
+        font-size: 6em;
+    }
+}
+@media (min-width: 1200px) {
+    h1{
+        font-size: 7em;
+    }
+    nav {
+        max-width: 70%;
+    }
+}
