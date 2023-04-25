@@ -1,0 +1,70 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Bootstrap Forms</title>
+        <link rel="stylesheet" href="/_src/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1 class="display-2">Forms</h1>
+            <form action="#nowhere">
+                <div class="row g-2">
+                    <div class="mb-3 col-sm">
+                        <label for="email">E-mail</label>
+                        <input
+                            type="email"
+                            name="email"
+                            id="email"
+                            class="form-control"
+                            placeholder="Enter your e-mail address" />
+                    </div>
+                    <div class="mb-3 col-sm">
+                        <label for="password">Password</label>
+                        <input
+                            type="password"
+                            name="password"
+                            id="password"
+                            class="form-control"
+                            placeholder="Enter your password" />
+                    </div>
+                </div>
+                <div class="mb-3">
+                    <label for="address">Address</label>
+                    <input type="text" class="form-control" name="address" id="address" placeholder="420 Stone St." />
+                </div>
+                <div class="row g-2">
+                    <div class="mb-3 col-md-6">
+                        <label for="city">City</label>
+                        <input type="text" class="form-control" name="city" id="city" />
+                    </div>
+                    <div class="mb-3 col-sm-6 col-md-3">
+                        <label for="state">State:</label>
+                        <select class="form-select" name="state" id="state">
+                            <option value="AL">Alabama</option>
+                            <option value="AK">Alaska</option>
+                        </select>
+                    </div>
+                    <div class="mb-3 col-sm-6 col-md-3">
+                        <label for="zipcode">Zip Code</label>
+                        <input type="text" class="form-control" name="zipcode" id="zipcode" />
+                    </div>
+                </div>
+
+                <div class="form-check form-switch mb-3">
+                    <input class="form-check-input" type="checkbox" value="Y" id="signup" />
+                    <label class="form-check-label" for="signup">Sign Me Up!</label>
+                </div>
+                <div class="d-grid d-sm-flex justify-content-sm-end">
+                    <button type="submit" class="btn btn-primary">Register Me!</button>
+                </div>
+            </form>
+        </div>
+
+        <script src="/_src/js/bootstrap.bundle.min.js"></script>
+    </body>
+</html>
